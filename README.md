@@ -5,9 +5,11 @@
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/inout-voltage.png" />
 
 ## Code
-## This folder contain two python file:-
-   * **INA219_UPS.py**  -> This file you need to run,it display the load voltage,current,power and battery percentage
-   * **oled_091.py**    ->This is the oled display library 
+## This folder contains two python files and Images,Fonts folder:-
+   * **INA219_UPS.py**  -> This file you need to run,it displays the load voltage, current, power and battery percentage on the terminal as well as in oled
+   * **oled_091.py**    ->This is the OLED display library 
+   * Images folder contains images which we display in oled display
+   * Fonts folder contain various fonts, which we use in the oled display
    
 ## Working
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/giff.gif" />

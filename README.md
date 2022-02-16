@@ -5,7 +5,7 @@
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/inout-voltage.png" />
 
 ## Code
-## First of all, you need to enable I2C in raspberry pi, for this you need to go **sudo raspi-config** then go to **interface options->I2C->yes->press enter** 
+## First of all, you need to enable I2C in raspberry pi, for this you need to go ""sudo raspi-config"" then go to "interface options->I2C->yes->press enter"" 
 ## This folder contains two python files and Images, Fonts folder:-
    * **INA219_UPS.py**  -> This file you need to run, displays the load voltage, current, power, and battery percentage on the terminal as well as in OLED
    * **oled_091.py**    ->This is the OLED display library 

@@ -9,8 +9,8 @@
 ## This folder contains two python files and Images, Fonts folder:-
    * **INA219_UPS.py**  -> This file you need to run, displays the load voltage, current, power, and battery percentage on the terminal as well as in OLED
    * **oled_091.py**    ->This is the OLED display library 
-   * Images folder contains images which we display in OLED display
-   * Fonts folder contain various fonts, which we use in the OLED display
+   * **Images folder** contains images which we display in OLED display
+   * **Fonts folder** contain various fonts, which we use in the OLED display
    
 ## Working
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/giff.gif" />

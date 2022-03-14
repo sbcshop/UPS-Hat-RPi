@@ -22,24 +22,20 @@ def info_print():
 
 oled_display = SSD1306()
 info_print()
-# Config Register (R/W)
-_REG_CONFIG                 = 0x00
-# SHUNT VOLTAGE REGISTER (R)
-_REG_SHUNTVOLTAGE           = 0x01
 
-# BUS VOLTAGE REGISTER (R)
-_REG_BUSVOLTAGE             = 0x02
+_REG_CONFIG                 = 0x00 # Config Register (R/W)
 
-# POWER REGISTER (R)
-_REG_POWER                  = 0x03
+_REG_SHUNTVOLTAGE           = 0x01 # SHUNT VOLTAGE REGISTER (R)
 
-# CURRENT REGISTER (R)
-_REG_CURRENT                = 0x04
+_REG_BUSVOLTAGE             = 0x02 # BUS VOLTAGE REGISTER (R)
 
-# CALIBRATION REGISTER (R/W)
-_REG_CALIBRATION            = 0x05
+_REG_POWER                  = 0x03 # POWER REGISTER (R)
 
-class BusVoltageRange:
+_REG_CURRENT                = 0x04 # CURRENT REGISTER (R)
+
+_REG_CALIBRATION            = 0x05 # CALIBRATION REGISTER (R/W)
+
+class Bus_Voltage_Range:
     """Constants for ``bus_voltage_range``"""
     RANGE_16V               = 0x00      # set bus voltage range to 16V
     RANGE_32V               = 0x01      # set bus voltage range to 32V (default)
@@ -86,7 +82,7 @@ class INA219:
         self._cal_value = 0
         self._current_lsb = 0
         self._power_lsb = 0
-        self.set_calibration_32V_2A()
+        self.calibration()
 
     def read(self,address):
         data = self.bus.read_i2c_block_data(self.addr, address, 2)
@@ -99,17 +95,17 @@ class INA219:
         self.bus.write_i2c_block_data(self.addr,address,temp)
 
 
-    def set_calibration_32V_2A(self):
+    def calibration(self): # set calibration 32V ,2A
         """Configures to INA219 to be able to measure up to 32V and 2A of current. Counter
            overflow occurs at 3.2A.
            ..note :: These calculations assume a 0.1 shunt ohm resistor is present
         """
 
-        self._current_lsb = .1  # Current LSB = 100uA per bit
+        self._current_lsb = 0.1  # Current LSB = 100uA per bit
         
         self._cal_value = 4096
         
-        self._power_lsb = .002  # Power LSB = 2mW per bit
+        self._power_lsb = 0.002  # Power LSB = 2mW per bit
 
         
 
@@ -117,7 +113,7 @@ class INA219:
         self.write(_REG_CALIBRATION,self._cal_value)
 
         # Set Config register to take into account the settings above
-        self.bus_voltage_range = BusVoltageRange.RANGE_32V
+        self.bus_voltage_range = Bus_Voltage_Range.RANGE_32V
         self.gain = Gain.DIV_8_320MV
         self.bus_adc_resolution = ADC_Resolution.ADCRES_12BIT_32S
         self.shunt_adc_resolution = ADC_Resolution.ADCRES_12BIT_32S
@@ -129,41 +125,41 @@ class INA219:
                       self.mode
         self.write(_REG_CONFIG,self.config)
 
-    def Shunt_Voltage_mV(self):
+    def Shunt_Voltage(self): # shunt voltage in milli volt
         self.write(_REG_CALIBRATION,self._cal_value)
         value = self.read(_REG_SHUNTVOLTAGE)
         if value > 32767:
             value -= 65535
         return value * 0.01
 
-    def Bus_Voltage_V(self):
-        self.write(_REG_CALIBRATION,self._cal_value)
-        self.read(_REG_BUSVOLTAGE)
-        return (self.read(_REG_BUSVOLTAGE) >> 3) * 0.004
-
-    def Current_mA(self):
+    def Current(self): # current in milli amp
         value = self.read(_REG_CURRENT)
         if value > 32767:
             value -= 65535
         return value * self._current_lsb
 
-    def Power_Watt(self):
+    def Power(self):
         self.write(_REG_CALIBRATION,self._cal_value)
         value = self.read(_REG_POWER)
         if value > 32767:
             value -= 65535
         return value * self._power_lsb
+    
+    def Bus_Voltage(self):
+        self.write(_REG_CALIBRATION,self._cal_value)
+        self.read(_REG_BUSVOLTAGE)
+        return (self.read(_REG_BUSVOLTAGE) >> 3) * 0.004
+
+
         
-
-
 # Create an INA219 instance.
 ina219 = INA219(addr=0x42)
 
 while True:
-        bus_voltage = ina219.Bus_Voltage_V()             # voltage on V- (load side)
-        shunt_voltage = ina219.Shunt_Voltage_mV() / 1000 # voltage between V+ and V- across the shunt
-        current = ina219.Current_mA()                   # current in mA
-        power = ina219.Power_Watt()                        # power in W
+        bus_voltage = ina219.Bus_Voltage()             # voltage on V- (load side)
+        shunt_voltage = ina219.Shunt_Voltage() / 1000 # voltage between V+ and V- across the shunt
+        current = ina219.Current()                   # current in mA
+        power = ina219.Power()                        # power in W
         p = (bus_voltage - 6)/2.4*100
         if(p > 100):p = 100
         if(p < 0):p = 0

@@ -6,7 +6,8 @@
 
 ## Features
   * Two on board battery reverse indicator Led's 
-  * Two USB power port for external devices 
+  * Two on board USB power port for external devices
+  * Onboard oled display, for displaying current, voltage,power and battery percentage of UPS HAT 
    
 ## Code
 ## First of all, you need to enable I2C in raspberry pi, for this you need to go "sudo raspi-config" then go to "interface options->I2C->yes->press enter" 

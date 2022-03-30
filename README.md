@@ -4,6 +4,10 @@
 ## UPS Hat is a 5v power supply, It fit at the top of the raspberry pi, it gives power backup, while raspberry pi's USB power is cut off. It has various protections like short circuit protection, reverse battery protection and indicator, overcharge/discharge protection, and over current protection. It has a 5V USB output, convenient for powering other boards.
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/inout-voltage.png" />
 
+## Features
+  * Two on board battery reverse indicator Led's 
+  * Two USB power port for external devices 
+   
 ## Code
 ## First of all, you need to enable I2C in raspberry pi, for this you need to go "sudo raspi-config" then go to "interface options->I2C->yes->press enter" 
 ## This folder contains two python files and Images, Fonts folder:-

@@ -8,7 +8,7 @@
   * Two on board battery reverse indicator Led's 
   * Two on board USB power port for external devices
   * Onboard oled display, for displaying current, voltage,power and battery percentage of UPS HAT 
-   
+  
 ## Code
 ### First of all, you need to enable I2C in raspberry pi, for this you need to go  ```sudo raspi-config ``` then go to "interface options->I2C->yes->press enter" 
 ### This folder contains two python files and Images, Fonts folder:-
@@ -16,7 +16,9 @@
    * **oled_091.py**    ->This is the OLED display library 
    * **Images folder** contains images which we display in OLED display
    * **Fonts folder** contain various fonts, which we use in the OLED display
-   
+
+## Steps to use UPS HAT
+  * D
 ## Run a Program On Your Raspberry Pi At Startup
 Go to below directory
 

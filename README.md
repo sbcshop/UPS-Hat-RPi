@@ -22,7 +22,9 @@ Go to below directory
 
  ```sudo nano /etc/rc.local```
  
- ```sudo python "write your python file directory/file.py &```
+ ```sudo python3 /home/pi/Desktop/UPS_Hat/INA219_UPS.py &```
+ 
+ Then press control+x to save
 
    
 ## Working

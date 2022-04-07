@@ -17,8 +17,8 @@
    * **Images folder** contains images which we display in OLED display
    * **Fonts folder** contain various fonts, which we use in the OLED display
 
-## Steps to use UPS HAT
-  * D
+## Steps To Use UPS HAT
+  * 
 ## Run a Program On Your Raspberry Pi At Startup
 Go to below directory
 

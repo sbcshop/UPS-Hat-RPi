@@ -18,6 +18,7 @@
    * **Fonts folder** contain various fonts, which we use in the OLED display
    
 ## Run a Program On Your Raspberry Pi At Startup
+Go to below directory
  ```sudo nano /etc/rc.local```
    
 ## Working

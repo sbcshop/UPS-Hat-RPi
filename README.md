@@ -19,12 +19,15 @@
 
 ## Steps To Use UPS HAT
   * Fix UPS HAT at the top of the Raspberry Pi
+  
     <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img1.JPG" />
    
   * Plug the Power cable to raspberry pi
+
     <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img2.JPG" />
     
   * Now Switch on UPS HAT using slider switch
+  
    <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img3.JPG" />
    <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img4.JPG" />
    

@@ -22,7 +22,7 @@ Go to below directory
 
  ```sudo nano /etc/rc.local```
  
- ```sudo python /home/pi/sample.py &```
+ ```sudo python "write your python file directory/file.py &```
 
    
 ## Working

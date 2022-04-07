@@ -17,5 +17,8 @@
    * **Images folder** contains images which we display in OLED display
    * **Fonts folder** contain various fonts, which we use in the OLED display
    
+## Run a Program On Your Raspberry Pi At Startup
+ ```sudo nano /etc/rc.local```
+   
 ## Working
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/giff.gif" />

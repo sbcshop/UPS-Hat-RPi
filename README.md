@@ -21,6 +21,9 @@
 Go to below directory
 
  ```sudo nano /etc/rc.local```
+ 
+ ```sudo python /home/pi/sample.py &```
+
    
 ## Working
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/giff.gif" />

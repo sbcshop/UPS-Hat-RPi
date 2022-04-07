@@ -32,7 +32,7 @@
    <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img4.JPG" />
    
   
-## Run a Program On Your Raspberry Pi At Startup
+## Run a Program On Your Raspberry Pi At Startup (*optional)
 Go to below directory
 
  ```sudo nano /etc/rc.local```

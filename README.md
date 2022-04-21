@@ -17,7 +17,7 @@
    * **Images folder** contains images which we display in OLED display
    * **Fonts folder** contain various fonts, which we use in the OLED display
 
-## Steps To Use UPS HAT (Folllow These Steps)
+## Steps To Use UPS HAT (Follow These Steps)
   * Fix UPS HAT at the top of the Raspberry Pi
   
     <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img1.JPG" />

@@ -1,3 +1,4 @@
+# This show basic information of raspberry pi on oled
 from oled_091 import SSD1306
 from subprocess import check_output
 from time import sleep

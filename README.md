@@ -39,7 +39,7 @@ Go to below directory
 
  ```sudo nano /etc/rc.local```
  
- ```sudo python3 /home/pi/Desktop/UPS_Hat/INA219_UPS.py &```
+ ```sudo python3 /home/pi/Desktop/UPS-Hat-for-Raspberry-Pi/INA219_UPS.py &```
  
  <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img.JPG" />
  

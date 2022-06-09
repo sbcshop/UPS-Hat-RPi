@@ -62,11 +62,18 @@ class i2c_interface:
         """
         :return: Returns SMBUS id of Raspberry Pi
         """
-        revision = [lines[12:-1] for lines in open('/proc/cpuinfo',
-                                                   'r').readlines() if
-                    "Revision" in lines[:8]]
-        revision = (revision + ['0000'])[0]
-        return 1 if int(revision, 16) >= 4 else 0
+        revision = 0
+        with open('/proc/cpuinfo', 'r') as cpuinfo:
+            for line in cpuinfo:
+                if line.startswith('Revision'):
+                    revision = line.split()[-1]
+                    break
+                if line.startswith('CPU revision'):
+                    revision = line.split()[-1]
+                    break
+        if int(revision, 16) >= 4:
+            return 1
+        return 0
 
     def i2c_read(self, register=0):
         data = self.bus.read_byte_data(self.address, register)

@@ -41,7 +41,7 @@ Go to below directory
  
  ```sudo python3 /home/pi/Desktop/UPS-Hat-RPi/INA219_UPS.py &```
  
- <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img.JPG" />
+ <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img_1.JPG" />
  
  Press Control+X then press Y to save
 

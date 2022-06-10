@@ -29,7 +29,7 @@ You need to follow this process when you use UPS HAT. if you use this process, y
 
     <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img2.JPG" />
     
-  * Now Switch on UPS HAT using slider switch
+  * Now Switch on UPS HAT using slider switch,then disconnect the type c power from the raspberry pi or turn off the raspberry pi external power (at this time             raspberry pi restart due to sudden power drop)Then reconnect the type c power to the Raspberry Pi after that ( In this process your raspberry pi needs to restart       one time if you use UPS backup)
   
    <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img3.JPG" />
    <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/img4.JPG" />

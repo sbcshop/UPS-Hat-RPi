@@ -18,8 +18,8 @@
    * **Fonts folder** contain various fonts, which we use in the OLED display
    
 ## Steps To Use UPS HAT (Follow These Steps) (**Important** *)
-**Connect the type c power to the raspberry pi first, then turn on the UPS HAT, then disconnect the type c power from the raspberry pi or turn off the raspberry pi external power (at this time raspberry pi restart due to sudden power drop)Then reconnect the type c power to the Raspberry Pi after that ( In this process your raspberry pi needs to restart one time if you use UPS backup), The Raspberry Pi now does not restart if the type c power is turned off or if the external power is turned off.
-You need to follow this process when you use UPS HAT. if you use this process, your OLED problem is also resolved(static noise pattern)**
+### Connect the type c power to the raspberry pi first, then turn on the UPS HAT, then disconnect the type c power from the raspberry pi or turn off the raspberry pi external power (at this time raspberry pi restart due to sudden power drop)Then reconnect the type c power to the Raspberry Pi after that ( In this process your raspberry pi needs to restart one time if you use UPS backup), The Raspberry Pi now does not restart if the type c power is turned off or if the external power is turned off.
+### You need to follow this process when you use UPS HAT. if you use this process, your OLED problem is also resolved(static noise pattern)
 
   * Fix UPS HAT at the top of the Raspberry Pi
   

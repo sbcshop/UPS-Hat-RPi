@@ -3,7 +3,6 @@ The INA219 is a current shunt and power monitor with an I2C- or SMBUS-compatible
 The device monitors both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering.
 The INA219 operates from –40°C to 125°C.
 '''
-from serial import SerialException
 from oled_091 import SSD1306
 from time import sleep
 from os import path

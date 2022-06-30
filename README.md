@@ -8,7 +8,7 @@ The UPS Hat is a 5v power supply. It fits on top of the Raspberry Pi and gives p
 ## Features
   * Two on board battery reverse indicator LEDs
   * Two on board USB power port for external devices
-  * Onboard oled display, for displaying current, voltage,power and battery percentage of UPS HAT
+  * Onboard OLED display, for displaying current, voltage, power, and battery percentage of UPS HAT
 
 ## Code
 ### Setup

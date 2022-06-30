@@ -13,7 +13,7 @@ The UPS Hat is a 5v power supply. It fits on top of the Raspberry Pi and gives p
 ## Code
 ### Setup
 
-1. Enable I2C in raspberry pi. Run `sudo raspi-config` then go to "interface options->I2C->yes->press enter"
+1. Enable I2C on the Raspberry Pi. Run `sudo raspi-config` then go to "interface options->I2C->yes->press enter"
 1. Install python libraries: `sudo -H pip3 install -r requirements.txt`
 
 ### folder contents

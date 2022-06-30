@@ -27,7 +27,7 @@ This folder contains two python files and Images, Fonts folders:
 ## Steps To Use UPS HAT (Follow These Steps) (**Important**)
 
 
-You need to follow this process when you use UPS HAT. if you use this process, your OLED problem is also resolved (static noise pattern)
+You need to follow this process when you use UPS HAT. If you use this process, your OLED problem is also resolved (the static noise pattern).
 
   * Fix UPS HAT at the top of the Raspberry Pi
 

@@ -1,7 +1,7 @@
 # UPS-Hat-for-Raspberry-Pi
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/banner.png" />
 
-The UPS Hat is a 5v power supply, It fit on top of the Raspberry Pi and gives power backup if the Pi's USB power supply is cut off. It has various protections like short circuit protection, reverse battery protection and indicator, overcharge/discharge protection, and overcurrent protection. It has a 5V USB output, convenient for powering other boards.
+The UPS Hat is a 5v power supply. It fits on top of the Raspberry Pi and gives power backup if the Pi's USB power supply is cut off. It has various protections like short circuit protection, reverse battery protection and indicator, overcharge/discharge protection, and overcurrent protection. It has a 5V USB output, convenient for powering other boards.
 
 <img src= "https://github.com/sbcshop/UPS-Hat-for-Raspberry-Pi/blob/main/Images/inout-voltage.png" />
 

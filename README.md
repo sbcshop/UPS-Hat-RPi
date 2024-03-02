@@ -7,7 +7,8 @@
 ## Features
   * Two on board battery reverse indicator Led's 
   * Two on board USB power port for external devices
-  * Onboard oled display, for displaying current, voltage,power and battery percentage of UPS HAT 
+  * Onboard oled display, for displaying current, voltage,power and battery percentage of UPS HAT
+  * Onboard Battery Pack Protection and Charge Balance IC 
 
 ## Specification:-
 - **Output voltage :** 5V USB 
